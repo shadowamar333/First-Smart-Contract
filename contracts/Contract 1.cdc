@@ -1,29 +1,29 @@
-pub contract ESports {
+pub contract FootBall {
 
-    pub var ZETA: {Address: TeamMembers}
+    pub var BARCELONA: {Address: Players}
     
-    pub struct TeamMembers {
-        pub let RightLane: String
-        pub let MiddleLane: String
-        pub let LeftLane: String
+    pub struct Players {
+        pub let Forward: String
+        pub let Middle: String
+        pub let Defend: String
         pub let account: Address
 
     
-        init(_RightLane: String, _MiddleLane: String, _LeftLane: String, _account: Address) {
-            self.RightLane = _RightLane
-            self.MiddleLane = _MiddleLane
-            self.LeftLane = _LeftLane
+        init(_Forward: String, _Middle: String, _Defend: String, _account: Address) {
+            self.Forward = _Forward
+            self.Middle = _Middle
+            self.Defend = _Defend
             self.account = _account
         }
     }
 
-    pub fun addMembers(RightLane: String, MiddleLane: String, LeftLane: String, account: Address) {
-        let newTeam = TeamMembers(_RightLane: RightLane, _MiddleLane: MiddleLane, _LeftLane: LeftLane, _account: account)
-        self.ZETA[account] = newTeam
+    pub fun addPlayers(Forward: String, Middle: String, Defend: String, account: Address) {
+        let newTeam = Players(_Forward: Forward, _Middle: Middle, _Defend:Defend, _account: account)
+        self.BARCELONA[account] = newTeam
     }
 
     init() {
-        self.ZETA = {}
+        self.BARCELONA = {}
     }
 
 }
