@@ -32,6 +32,11 @@ An in-depth paragraph about your project and overview of use.
 
 * copy this command code to contract:
 ```
+    pub contract FootBall {
+
+    pub var BARCELONA: {Address: Players}
+    
+    pub struct Players {
         pub let Forward: String
         pub let Middle: String
         pub let Defend: String
@@ -47,7 +52,7 @@ An in-depth paragraph about your project and overview of use.
     }
 
     pub fun addPlayers(Forward: String, Middle: String, Defend: String, account: Address) {
-        let newTeam = Players(_Forward:Forward , _Middle: Middle, _Defend: Defend, _account: account)
+        let newTeam = Players(_Forward: Forward, _Middle: Middle, _Defend:Defend, _account: account)
         self.BARCELONA[account] = newTeam
     }
 
