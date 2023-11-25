@@ -89,7 +89,7 @@ now only thing there isto done is execution
 first you need to deploy the contract part
 then you need to complete the data table in transaction part
 as it is naming an FootBall team named Barcelona which containing 3 Players which hold three position in game
-you can fill first three column with any names you like but the last one should be perfect adress so you can fill it as :0x01
+you can fill first three column with any names you like but the last one should be perfect adress so you can fill it as :0x05
 after you done it then send the data
 and your good to execute the script
 THATS IT!!!!
