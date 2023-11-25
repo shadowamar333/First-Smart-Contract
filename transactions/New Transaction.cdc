@@ -1,11 +1,11 @@
-import ESports from 0x01
+import FootBall from 0x01
 
-transaction(RightLane: String, MiddleLane: String, LeftLane: String, account: Address) {
+transaction(Forward: String, Middle: String, Defend: String, account: Address) {
 
     prepare(signer: AuthAccount) {}
 
     execute {
-        ESports.addMembers(RightLane: RightLane, MiddleLane: MiddleLane, LeftLane: LeftLane, account: account)
-        log("We're done.")
-    }
+        FootBall.addPlayers(Forward: Forward, Middle: Middle, Defend: Defend, account: account)
+        log("Players were Recruited.")
+    
 }
