@@ -23,7 +23,7 @@ An in-depth paragraph about your project and overview of use.
 * script
 * first we need an enviornment inorder to run this program
 * Use Flow plaground as enviornment as it is an online enviornment there no need to download any additional libraries
-* you can copy codes from contract and paste in respective cod window or directly copy from down below make sure the adress that contract is linked is 0x01
+* you can copy codes from contract and paste in respective cod window or directly copy from down below make sure the adress that contract is linked is 0x05
 * after succesfully copying all the three main parts which are conttact,transaction and script 
 * you are ready to roll !!
 * !
@@ -60,7 +60,7 @@ An in-depth paragraph about your project and overview of use.
 ```
 *copy this piece of code into transaction
 ```
-import FootBall from 0x01
+import FootBall from 0x05
 
 transaction(Forward: String, Middle: String, Defend: String, account: Address) {
 
@@ -74,7 +74,7 @@ transaction(Forward: String, Middle: String, Defend: String, account: Address) {
 ```
 *finally copy this piece of code into script 
 ```
-import FootBall from 0x01
+import FootBall from 0x05
 pub fun main(account:Address): FootBall.Players{
   return FootBall.BARCELONA[account]!
 }
@@ -93,7 +93,7 @@ THATS IT!!!!
 as this project is just an demo of smart contract in flow blockchain using caadence
 the amount of code containing is very low
 so the probabilty of having error is very low
-if you perfectly done copying the piece of code then given specefic data and adress is 0x01
+if you perfectly done copying the piece of code then given specefic data and adress is 0x05
 then it should be fine
 but even if you encounter any error or probelems feel free to contact using gmail
 ```
