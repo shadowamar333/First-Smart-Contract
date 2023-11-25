@@ -32,26 +32,27 @@ An in-depth paragraph about your project and overview of use.
 
 * copy this command code to contract:
 ```
-        pub let MiddleLane: String
-        pub let LeftLane: String
+        pub let Forward: String
+        pub let Middle: String
+        pub let Defend: String
         pub let account: Address
 
     
-        init(_RightLane: String, _MiddleLane: String, _LeftLane: String, _account: Address) {
-            self.RightLane = _RightLane
-            self.MiddleLane = _MiddleLane
-            self.LeftLane = _LeftLane
+        init(_Forward: String, _Middle: String, _Defend: String, _account: Address) {
+            self.Forward = _Forward
+            self.Middle = _Middle
+            self.Defend = _Defend
             self.account = _account
         }
     }
 
-    pub fun addMembers(RightLane: String, MiddleLane: String, LeftLane: String, account: Address) {
-        let newTeam = TeamMembers(_RightLane: RightLane, _MiddleLane: MiddleLane, _LeftLane: LeftLane, _account: account)
-        self.ZETA[account] = newTeam
+    pub fun addPlayers(Forward: String, Middle: String, Defend: String, account: Address) {
+        let newTeam = Players(_Forward:Forward , _Middle: Middle, _Defend: Defend, _account: account)
+        self.BARCELONA[account] = newTeam
     }
 
     init() {
-        self.ZETA = {}
+        self.BARCELONA = {}
     }
 
 }
@@ -59,30 +60,30 @@ An in-depth paragraph about your project and overview of use.
 ```
 *copy this piece of code into transaction
 ```
-import ESports from 0x01
+import FootBall from 0x01
 
-transaction(RightLane: String, MiddleLane: String, LeftLane: String, account: Address) {
+transaction(Forward: String, Middle: String, Defend: String, account: Address) {
 
     prepare(signer: AuthAccount) {}
 
     execute {
-        ESports.addMembers(RightLane: RightLane, MiddleLane: MiddleLane, LeftLane: LeftLane, account: account)
+        FootBall.Players(Forward: Forward, Middle: Middle, Defend: Defend, account: account)
         log("We're done.")
     }
 }
 ```
 *finally copy this piece of code into script 
 ```
-import ESports from 0x01
-pub fun main(account:Address): ESports.TeamMembers{
-  return ESports.ZETA[account]!
+import FootBall from 0x01
+pub fun main(account:Address): FootBall.Players{
+  return FootBall.BARCELONA[account]!
 }
 ```
 *after completing these steps it is half done
 now only thing there isto done is execution
 first you need to deploy the contract part
 then you need to complete the data table in transaction part
-as it is naming an esports team named zeta which containing 3 members which hold three position in game
+as it is naming an FootBall team named Barcelona which containing 3 Players which hold three position in game
 you can fill first three column with any names you like but the last one should be perfect adress so you can fill it as :0x01
 after you done it then send the data
 and your good to execute the script
@@ -96,7 +97,7 @@ if you perfectly done copying the piece of code then given specefic data and adr
 then it should be fine
 but even if you encounter any error or probelems feel free to contact using gmail
 ```
-iamoneofthechoosen1@gmail.com
+amarnath759498@gmail.com
 ```
 
 
@@ -105,10 +106,9 @@ iamoneofthechoosen1@gmail.com
 
 Contributors names and contact info
 MetaCrafters.io
-DabIsHere
-[@DabIsHere](iamoneofthechoosen1@gmail.com)
+[@amarnath](amarnath759498@gmail.com)
 
 
 ## License
 
-This project is licensed under the DabIsHere License - see the LICENSE.md file for details
+This project is licensed under the Amarnath License - see the LICENSE.md file for details
