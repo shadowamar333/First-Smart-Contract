@@ -8,4 +8,4 @@ transaction(Forward: String, Middle: String, Defend: String, account: Address) {
         FootBall.addPlayers(Forward: Forward, Middle: Middle, Defend: Defend, account: account)
         log("Players were Recruited.")
     
-}
+}}
