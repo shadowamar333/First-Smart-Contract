@@ -1,4 +1,4 @@
-# SmartContractInCandence
+# First Smart Contract
 A Simple Example of Coding Smart Contract in Candece language In Flow Block Chain
 this project help you to understand little concept of coding in cadence in flow block chain
 this is a simple model of how an super contract written and executed
